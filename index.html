@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Auction</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="modal">
+
+    <section class="teamDisplay" id="MIdisplay">
+      <div>
+       <img class="logo" id="lMI"src="logos/milogo.png" alt="">
+     </div> 
+     <div><p class="text">Mumbai Indians </p>
+       <p class="text">Remainng Purse : &#8377<span class="purse" id="MIpurse">50</span> crores</p>
+       <p class="text">Players Bought: <span class="numOfPlayers" id="MInum">0</span></p>
+       </div>
+     </section>
+
+    <div class="BoughtPlayer">
+      <p class="teamDetails" id="number">1</p>
+      <img class="teamDetails" id="PlayerImg"src="Players/Virat kohli.jpg" alt="">
+      <p class="teamDetails" id="name">Virat kohli</p>         
+      <p><span id="batAvg">95</span>
+      
+      <span id="bowlPts">14</span>
+       
+      <span id="wkPts">-</span></p> 
+                         
+    </div>
+
+    <button id="close">X</button>
+  </div>
+    <section class="container"> 
+
+   
+    <div class="wallet">
+        <section class="team" id="MI">
+         <div>
+          <img class="logo" id="lMI"src="logos/milogo.png" alt="">
+        </div> 
+        <div><p class="text">Mumbai Indians </p>
+          <p class="text">Remainng Purse : &#8377<span class="purse" id="MIpurse">50</span> crores</p>
+          <p class="text">Players Bought: <span class="numOfPlayers" id="MInum">0</span></p>
+          </div>
+        </section>
+
+        <section class="team" id="CSK">
+          <div>
+           <img class="logo"id="lCSK"src="logos/csklogo.png" alt="">
+         </div> 
+         <div><p class="text">Chennai Super Kings </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="CSKpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="CSKnum">0</span></p>
+           </div>
+         </section>
+
+         <section class="team" id="RR">
+          <div>
+           <img class="logo"src="logos/rrlogo.png" alt="">
+         </div> 
+         <div><p class="text">Rajasthan Royals </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="RRpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers" id="RRnum">0</span></p>
+           </div>
+         </section>
+
+         <section class="team" id="RCB">
+          <div>
+           <img class="logo"src="logos/rcblogo.png" alt="">
+         </div> 
+         <div><p class="text">Royal challengers Bangalore </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="RCBpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="RCBnum">0</span></p>
+           </div>
+         </section>
+
+         <section class="team" id="PBKS">
+          <div>
+           <img class="logo"src="logos/pbkslogo.png" alt="">
+         </div> 
+         <div><p class="text"> Punjab Kings </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="PBKSpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="PBKSnum">0</span></p>
+           </div>
+         </section>
+
+         <section class="team" id="KKR">
+          <div>
+           <img class="logo"src="logos/kkrlogo.png" alt="">
+         </div> 
+         <div><p class="text">Kolkata Knight Riders </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="KKRpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="KKRnum">0</span></p>
+           </div>
+         </section> 
+         
+         <section class="team" id="SRH">
+          <div>
+           <img class="logo"src="logos/srhlogo.png" alt="">
+         </div> 
+         <div><p class="text">Sunrisers Hyderabaad </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="SRHpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="SRHnum">0</span></p>
+           </div>
+         </section>
+
+         <section class="team" id="DC">
+          <div>
+           <img class="logo"src="logos/dclogo.png" alt="">
+         </div> 
+         <div><p class="text">Delhi Capitals </p>
+           <p class="text">Remainng Purse : &#8377<span class="purse" id="DCpurse">50</span> crores</p>
+           <p class="text">Players Bought: <span class="numOfPlayers"  id="DCnum">0</span></p>
+           </div>
+         </section>
+    
+       
+    </div>
+
+    <div class="statsHolder">
+
+       <div style="display:block;">
+
+         <input style="border-radius:5px;border:2px rgb(39,50,50) solid;"id="Medication" name="Medication" size="3" type="text" value="">
+         <button class="button" id="change">Search</button>
+         
+      </div>
+
+
+        <div >
+            <p>Player:<span id="playerNum">1</span></p>
+            <p class="stats" id="name">Virat kohli</p>
+            <img class="stas" id="currPlayerImg"src="Players/Virat kohli.jpg" alt="">
+                       
+            <p>Bat Points :<span id="batAvg">95</span></p> 
+            &nbsp;
+            <p>Bowl Points:<span id="bowlPts">14</span></p>
+             &nbsp;
+            <p>Wicketkeeping Pts :<span id="wkPts">Nil</span></p> 
+            <hr>
+            <p><br>Base Price : <span id="basePrice">5</span> Cr</p>     
+             
+        </div>
+
+    </div>
+
+
+        <div class="bids">
+
+            <section class="bids-1">
+           <p class="Bid">Current Bid:</p>
+           <p id="rupee"> &#8377<span class="Bid" id="Amount">0</span>Lakhs</p>
+           <div class="upsold">
+             <button id="UP">Bid Up</button>
+             <button id="Sold">Sold</button>
+           </div>
+           <p class="Bids" id="hidden">0</p>
+            </section>
+
+            <
+            <section class="bids-2" id="teamSelector">
+              <p>Select Team</p>
+              <hr>
+             <form>
+               <div class="upsold">
+                 <label><input name="profession" type="radio" value="MI"   > Mumbai Indians</label>
+                 <label><input name="profession" type="radio" value="CSK"> Chennai Super Kings</label>
+                 <label><input name="profession" type="radio" value="RR"> Rajasthan Royals</label>
+                 <label><input name="profession" type="radio" value="SRH"> Sunrisers Hyderabad</label>
+              
+                 <label><input name="profession" type="radio" value="RCB"> Royal Challengers Banglore</label>
+                 <label><input name="profession" type="radio" value="PBKS"> Punjab Kings</label>
+                 <label><input name="profession" type="radio" value="KKR"> Kolakata Knight Riders</label>
+                 <label><input name="profession" type="radio" value="DC"> Delhi Capitals</label>
+             </div>
+            </form>
+
+             <div class="upsold">
+                <button class="button"id="confirm">ADD</button>
+             </div>
+                
+            </section>
+
+           
+
+        </div>
+
+        
+        
+    </section>
+
+   
+      
+    <script type="module" async src="app.js"></script>
+</body>
+</html>
